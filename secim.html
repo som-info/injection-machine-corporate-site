@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enjekta Makine — Makine seçim yardımcısı</title>
+  <meta name="description" content="Parça ağırlığı, izdüşüm alanı ve malzemeden kaba kapatma kuvveti ve makine serisi önerisi.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1c2126">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:site_name" content="Enjekta Makine">
+  <meta property="og:title" content="Enjekta Makine — Makine seçim yardımcısı">
+  <meta property="og:description" content="Parça ağırlığı, izdüşüm alanı ve malzemeden kaba kapatma kuvveti ve makine serisi önerisi.">
+  <meta property="og:image" content="assets/injection-machine.jpg">
+  <meta property="og:image:alt" content="Grafit ve beyaz panelli servo-hidrolik plastik enjeksiyon makinesi">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Enjekta Makine — Makine seçim yardımcısı">
+  <meta name="twitter:description" content="Parça ağırlığı, izdüşüm alanı ve malzemeden kaba kapatma kuvveti ve makine serisi önerisi.">
+  <meta name="twitter:image" content="assets/injection-machine.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+  
+</head>
+<body data-page-title="Makine seçim yardımcısı">
+  <a class="skip-link" href="#icerik">İçeriğe geç</a>
+  <div class="utility">
+    <div class="wrap utility-inner">
+      <p class="utility-address" data-site="address-short">İkitelli OSB, Başakşehir / İstanbul</p>
+      <p class="utility-meta">
+        <a data-site="phone" data-site-href="tel" href="tel:+902120000000">+90 (212) 000 00 00</a>
+        <span aria-hidden="true">·</span>
+        <a data-site="email" data-site-href="mail" href="mailto:info@enjekta.example">info@enjekta.example</a>
+      </p>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 36 36" width="36" height="36" aria-hidden="true"><rect x="1.5" y="1.5" width="33" height="33" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M7 12.5h22M7 18h22M7 23.5h14" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="24" y="21" width="5" height="5" fill="#1e4f5c"/></svg>
+        <span class="logo-text">
+          <span class="logo-name" data-site="short">Enjekta</span>
+          <span class="logo-tag" data-site="tagline-short">Plastik enjeksiyon</span>
+        </span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Ana menü">
+        <ul>
+          <li><a href="urunler.html">Ürünler</a></li>
+          <li><a href="hizmetler.html">Hizmetler</a></li>
+          <li><a href="secim.html" aria-current="page">Seçim</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="sss.html">SSS</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-accent header-cta" href="iletisim.html">Teklif Al</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="nav-toggle-label">Menü</span>
+      </button>
+    </div>
+  </header>
+  <main id="icerik" tabindex="-1">
+    <header class="page-hero">
+      <div class="wrap">
+                <nav class="crumbs" aria-label="Konum"><a href="index.html">Ana sayfa</a><span aria-hidden="true">/</span><span aria-current="page">Seçim yardımcısı</span></nav>
+        <h1>Makine seçim yardımcısı</h1>
+        <p class="lede">Toplam izdüşüm alanı, parça ağırlığı ve malzeme ile kaba kapatma kuvveti hesaplanır. Sonuç bir ön seçimdir.</p>
+      </div>
+    </header>
+    <div class="page">
+      <div class="wrap">
+        <noscript><p class="note" style="margin-bottom:16px">Bu araç JavaScript ile çalışır. JavaScript kapalıysa seri sayfalarındaki örnek tablolara bakın veya teklif formunu kullanın.</p></noscript>
+        <div class="selector-grid">
+          <form id="secim-formu" class="form-card">
+            <div class="form-grid">
+              <div>
+                <label for="agirlik">Toplam parça ağırlığı (g) <span aria-hidden="true">*</span></label>
+                <input id="agirlik" name="weight" type="text" inputmode="decimal" required>
+                <p class="hint">Tüm gözler, yolluk hariç.</p>
+              </div>
+              <div>
+                <label for="alan">Toplam izdüşüm alanı (cm²) <span aria-hidden="true">*</span></label>
+                <input id="alan" name="area" type="text" inputmode="decimal" required>
+                <p class="hint">Tüm gözler. Yolluk izdüşümü dahil edilebilir.</p>
+              </div>
+              <div>
+                <label for="yolluk">Yolluk payı (%) <span aria-hidden="true">*</span></label>
+                <input id="yolluk" name="runner" type="text" inputmode="decimal" value="15" required>
+              </div>
+              <div>
+                <label for="malzeme">Malzeme <span aria-hidden="true">*</span></label>
+                <select id="malzeme" name="material" required>
+                  <option value="">Seçin</option>
+                </select>
+              </div>
+              <div class="full">
+                <label for="uygulama">Uygulama <span aria-hidden="true">*</span></label>
+                <select id="uygulama" name="application" required>
+                  <option value="">Seçin</option>
+                  <option value="genel">Genel amaçlı</option>
+                  <option value="hassas">Hassas veya temiz çalışma</option>
+                  <option value="dikey">Insert, dikey bağlama</option>
+                  <option value="buyuk">Büyük gövde parçası</option>
+                </select>
+              </div>
+              <fieldset class="full" id="emniyet-alani">
+                <legend>Emniyet payı</legend>
+                <div class="choice-row">
+                  <label class="choice"><input type="radio" name="safety" value="10"> %10</label>
+                  <label class="choice"><input id="emniyet-15" type="radio" name="safety" value="15" checked> %15</label>
+                  <label class="choice"><input type="radio" name="safety" value="20"> %20</label>
+                </div>
+              </fieldset>
+              <div class="full">
+                <button class="btn btn-accent" type="submit">Seri öner</button>
+              </div>
+            </div>
+          </form>
+          <div id="secim-sonuc" class="result-card" tabindex="-1" aria-live="polite">
+            <p class="result-kicker">Ön seçim</p>
+            <h2>Henüz hesap yok</h2>
+            <p>Alan, gramaj ve malzemeyi girin. Hesap bu tarayıcıda yapılır, veri gönderilmez.</p>
+          </div>
+        </div>
+        <h2 style="margin:48px 0 8px">Örnek malzeme katsayıları</h2>
+        <p class="hint" style="margin-bottom:12px">Atölye pratiğinden derlenmiş örnek katsayılardır. Standart bir tablo değildir.</p>
+        <div class="table-scroll" tabindex="0" role="region" aria-labelledby="katsayi-baslik">
+          <table class="factors" id="katsayi-tablosu">
+            <caption id="katsayi-baslik">ton/cm² cinsinden örnek katsayı</caption>
+            <thead>
+              <tr><th scope="col">Malzeme</th><th scope="col">Katsayı</th><th scope="col">Not</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p class="note" style="margin-top:16px">Kapatma (ton) = toplam izdüşüm alanı (cm²) × katsayı (ton/cm²) × emniyet çarpanı. Gramaj, yolluk payı eklendikten sonra örnek PS shot değerinin %80 sınırında tutulur.</p>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-brand" data-site="short">Enjekta</p>
+        <p data-site="tagline">Plastik enjeksiyon makineleri</p>
+      </div>
+      <nav aria-label="Sayfalar">
+        <p class="footer-label">Sayfalar</p>
+        <ul>
+          <li><a href="index.html">Ana sayfa</a></li>
+          <li><a href="urunler.html">Ürünler</a></li>
+          <li><a href="hizmetler.html">Hizmetler</a></li>
+          <li><a href="secim.html">Seçim</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="sss.html">SSS</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Seriler">
+        <p class="footer-label">Seriler</p>
+        <ul>
+          <li><a href="urun-servo-hidrolik.html">SF · Servo-hidrolik</a></li>
+          <li><a href="urun-tam-elektrikli.html">EF · Tam elektrikli</a></li>
+          <li><a href="urun-iki-plakali.html">ÇP · İki plakalı</a></li>
+          <li><a href="urun-dikey.html">DK · Dikey</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer-label">İletişim</p>
+        <p data-site="address1">İkitelli OSB, Örnek Sanayi Caddesi No: 100</p>
+        <p data-site="address2">34490 Başakşehir / İstanbul</p>
+        <p><a data-site="phone" data-site-href="tel" href="tel:+902120000000">+90 (212) 000 00 00</a></p>
+        <p><a data-site="email" data-site-href="mail" href="mailto:info@enjekta.example">info@enjekta.example</a></p>
+        <p data-site="hours">Hafta içi 08:30–18:00</p>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <p>© <span data-site="year">2026</span> <span data-site="legal">Enjekta Makine Sanayi A.Ş.</span></p>
+      <p>Teknik tablolar örnek değerlerdir. Sertifika, müşteri listesi ve üretim adedi yayımlanmaz.</p>
+    </div>
+  </footer>
+  <script src="js/config.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/selector-core.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/selector.js"></script>
+</body>
+</html>
